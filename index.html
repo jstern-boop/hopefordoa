@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hope &amp; Healing for Rev. Dona Carbone</title>
+<meta name="description" content="Rev. Dona Carbone, Director of Worship at Love and Mercy Fellowship, is fighting Stage 3 ovarian cancer. Help fund the treatment her insurance won't cover.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Hope &amp; Healing for Rev. Dona Carbone">
+<meta property="og:description" content="Support Rev. Dona Carbone's fight against ovarian cancer. Every gift helps fund treatment her insurance won't cover.">
+<meta property="og:image" content="https://d2g8igdw686xgo.cloudfront.net/105336275_17829427729232_r.png">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --maroon: #6e2436;
+    --maroon-dark: #531a28;
+    --gold: #b98a2e;
+    --gold-light: #d9b463;
+    --cream: #faf6ef;
+    --cream-deep: #f2ead9;
+    --ink: #362b23;
+    --ink-soft: #5a4d43;
+    --line: #e4d9c4;
+    --white: #ffffff;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    color: var(--maroon-dark);
+    margin: 0 0 0.5em 0;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  p{ margin: 0 0 1.1em 0; }
+  a{ color: var(--maroon); }
+  img{ max-width: 100%; display:block; }
+  .wrap{ max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  .center{ text-align:center; }
+
+  /* Top ribbon */
+  .ribbon{
+    background: var(--maroon-dark);
+    color: #f1e3d3;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    padding: 8px 0;
+    text-align:center;
+  }
+  .ribbon a{ color: var(--gold-light); text-decoration: underline; }
+
+  /* Header */
+  header.site{
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .brand-mark{
+    display:flex;
+    align-items:center;
+    gap: 14px;
+  }
+  .cross{
+    width: 30px; height: 30px; flex-shrink:0;
+  }
+  .brand-text .kicker{
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.68rem;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .brand-text .name{
+    font-family:'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--maroon-dark);
+    font-weight: 600;
+  }
+  .header-cta{
+    background: var(--maroon);
+    color: #fff;
+    padding: 11px 22px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+    box-shadow: 0 2px 6px rgba(110,36,54,0.25);
+    transition: background .15s ease, transform .15s ease;
+  }
+  .header-cta:hover{ background: var(--maroon-dark); transform: translateY(-1px); }
+
+  /* Hero */
+  .hero{
+    background: linear-gradient(180deg, var(--cream-deep) 0%, var(--cream) 100%);
+    padding: 64px 0 56px;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items:center;
+  }
+  .hero-eyebrow{
+    display:inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--maroon);
+    background: rgba(185,138,46,0.14);
+    border: 1px solid rgba(185,138,46,0.4);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  .hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.35em;
+  }
+  .hero .lede{
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    max-width: 46ch;
+  }
+  .hero-actions{
+    margin-top: 28px;
+    display:flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items:center;
+  }
+  .btn-primary{
+    display:inline-block;
+    background: var(--maroon);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    font-size: 1.02rem;
+    padding: 15px 32px;
+    border-radius: 3px;
+    box-shadow: 0 4px 14px rgba(110,36,54,0.3);
+    transition: background .15s ease, transform .15s ease;
+    border: 1px solid var(--maroon-dark);
+  }
+  .btn-primary:hover{ background: var(--maroon-dark); transform: translateY(-1px); }
+  .btn-secondary{
+    display:inline-block;
+    text-decoration:none;
+    font-weight:600;
+    color: var(--maroon-dark);
+    padding: 14px 6px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .hero-photo-frame{
+    border: 8px solid #fff;
+    box-shadow: 0 12px 32px rgba(83,26,40,0.18);
+    border-radius: 3px;
+    overflow:hidden;
+    background:#fff;
+  }
+  .hero-photo-frame img{ width:100%; height: 420px; object-fit: cover; object-position: center 20%; }
+  .hero-photo-caption{
+    text-align:center;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* Progress card */
+  .progress-card{
+    background:#fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 22px 24px;
+    margin-top: 22px;
+    box-shadow: 0 4px 14px rgba(83,26,40,0.06);
+  }
+  .progress-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .progress-top .raised{
+    font-family:'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--maroon-dark);
+    font-weight: 700;
+  }
+  .progress-top .goal{
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+  }
+  .bar-track{
+    background: var(--cream-deep);
+    border-radius: 999px;
+    height: 12px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .bar-fill{
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--maroon) 100%);
+    border-radius: 999px;
+  }
+  .progress-meta{
+    display:flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
+  /* Section styling */
+  section{ padding: 60px 0; }
+  .section-tight{ padding: 40px 0; }
+  .divider-line{
+    width: 60px; height: 3px; background: var(--gold);
+    margin: 0 auto 22px auto;
+  }
+  .divider-line.left{ margin: 0 0 22px 0; }
+
+  .band-cream{ background: var(--cream); }
+  .band-white{ background: #fff; }
+  .band-maroon{
+    background: var(--maroon-dark);
+    color: #f1e3d3;
+  }
+  .band-maroon h2{ color: #fff; }
+  .band-maroon .divider-line{ background: var(--gold-light); }
+
+  .story-grid{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .story-grid h2{ font-size: 1.9rem; }
+  .pull-quote{
+    background: var(--cream-deep);
+    border-left: 4px solid var(--gold);
+    padding: 20px 24px;
+    font-family:'Playfair Display', serif;
+    font-style: italic;
+    color: var(--maroon-dark);
+    font-size: 1.08rem;
+    border-radius: 0 4px 4px 0;
+    margin: 24px 0;
+  }
+  .side-card{
+    background: var(--cream-deep);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 24px;
+  }
+  .side-card h3{ font-size: 1.05rem; margin-bottom: 12px; }
+  .side-card ul{ padding-left: 20px; margin: 0; }
+  .side-card li{ margin-bottom: 8px; color: var(--ink-soft); font-size: 0.95rem; }
+
+  /* Ministry grid */
+  .ministry-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-top: 8px;
+  }
+  .ministry-card{
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 26px 24px;
+    box-shadow: 0 3px 10px rgba(83,26,40,0.05);
+  }
+  .ministry-card .icon{
+    width: 40px; height: 40px;
+    margin-bottom: 14px;
+    color: var(--gold);
+  }
+  .ministry-card h3{ font-size: 1.05rem; margin-bottom: 8px; }
+  .ministry-card p{ color: var(--ink-soft); font-size: 0.94rem; margin-bottom: 0; }
+
+  /* Donate CTA band */
+  .cta-band{
+    text-align:center;
+    padding: 64px 0;
+  }
+  .cta-band h2{ color: #fff; font-size: 2rem; }
+  .cta-band p{ color: #e8d7c4; max-width: 56ch; margin: 0 auto 28px auto; font-size: 1.05rem; }
+  .btn-donate-large{
+    display:inline-block;
+    background: var(--gold);
+    color: var(--maroon-dark);
+    text-decoration:none;
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 18px 42px;
+    border-radius: 3px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform .15s ease, background .15s ease;
+  }
+  .btn-donate-large:hover{ background: var(--gold-light); transform: translateY(-2px); }
+  .cta-sub{ margin-top: 16px; font-size: 0.85rem; color: #cbb79b; }
+
+  /* Ways to help */
+  .help-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .help-card{
+    text-align:center;
+    padding: 8px 12px;
+  }
+  .help-card .num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width: 44px; height:44px;
+    border-radius: 50%;
+    background: var(--maroon);
+    color: #fff;
+    font-family:'Playfair Display', serif;
+    font-weight:700;
+    margin-bottom: 14px;
+  }
+  .help-card h3{ font-size: 1.05rem; }
+  .help-card p{ color: var(--ink-soft); font-size: 0.93rem; }
+
+  /* Footer */
+  footer{
+    background: var(--maroon-dark);
+    color: #cbb79b;
+    padding: 40px 0 26px;
+    font-size: 0.88rem;
+  }
+  footer a{ color: #f1e3d3; }
+  .footer-grid{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    padding-bottom: 24px;
+    margin-bottom: 18px;
+  }
+  .footer-brand{
+    font-family:'Playfair Display', serif;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .footer-legal{
+    text-align:center;
+    color: #a68b6d;
+    font-size: 0.82rem;
+  }
+
+  @media (max-width: 860px){
+    .hero-grid, .story-grid{ grid-template-columns: 1fr; }
+    .hero-photo-frame{ order:-1; }
+    .hero-photo-frame img{ height: 300px; }
+    .ministry-grid, .help-grid{ grid-template-columns: 1fr; }
+    .hero h1{ font-size: 2rem; }
+    .brand{ justify-content:center; text-align:center; }
+    .footer-grid{ flex-direction:column; text-align:center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ribbon">
+  Rev. Dona Carbone is part of the <a href="https://www.loveandmercy.church/" target="_blank" rel="noopener">Love &amp; Mercy Fellowship</a> family — Bay Shore, Long Island, NY
+</div>
+
+<header class="site">
+  <div class="wrap brand">
+    <div class="brand-mark">
+      <svg class="cross" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 2H14V10H22V14H14V22H10V14H2V10H10V2Z" fill="#6e2436"/>
+      </svg>
+      <div class="brand-text">
+        <div class="kicker">Hope &amp; Healing</div>
+        <div class="name">For Rev. Dona Carbone</div>
+      </div>
+    </div>
+    <a class="header-cta" href="https://www.gofundme.com/f/hope-and-healing-for-my-cancer-battle" target="_blank" rel="noopener">Donate Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow">Stage 3 Ovarian Cancer</span>
+        <h1>Help Rev. Dona Carbone Fight for Her Life</h1>
+        <p class="lede">
+          For decades, Dona Carbone has served others &mdash; leading worship, running outreach to the
+          homeless of Long Island and Manhattan, and caring for her church family at Love and Mercy
+          Fellowship. Now she's facing the fight of her life, and she needs our help.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="https://www.gofundme.com/f/hope-and-healing-for-my-cancer-battle" target="_blank" rel="noopener">Give on GoFundMe</a>
+          <a class="btn-secondary" href="#story">Read Dona's Story</a>
+        </div>
+
+        <div class="progress-card">
+          <div class="progress-top">
+            <span class="raised">$12,010 raised</span>
+            <span class="goal">of $16,000 goal</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width:75%;"></div></div>
+          <div class="progress-meta">
+            <span>75% funded</span>
+            <span>51 donations so far</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-photo-frame">
+          <img src="https://www.loveandmercy.church/wp-content/uploads/2022/06/IMG_1599-271x300.jpg" alt="Rev. Dona Carbone">
+        </div>
+        <p class="hero-photo-caption">Rev. Dona Carbone, Director of Worship, Love and Mercy Fellowship</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-white" id="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <div>
+        <div class="divider-line left"></div>
+        <h2>Dona's Story</h2>
+        <p>
+          In February 2025, Dona was diagnosed with Stage 3 Ovarian Cancer. Thanks to good medical
+          insurance, she began chemotherapy right away, followed by surgery that July. But the results
+          weren't what she and her doctors had hoped for &mdash; her oncologist estimated that further
+          traditional chemotherapy would add only six months to a year to her life.
+        </p>
+        <p>
+          Dona went searching for another way forward. She found a treatment being used successfully on
+          patients with similar diagnoses &mdash; some at Stage 4 &mdash; who are still doing well four
+          years later. To her, the choice was clear. The obstacle is that her insurance will not cover
+          this treatment, even though some of the medications involved are FDA approved.
+        </p>
+        <div class="pull-quote">
+          "I am a young at heart 65 year&#8209;old woman with a lot more life to live, given the opportunity."
+          <br><span style="font-style:normal; font-weight:600; font-size:0.85rem; color:var(--ink-soft);">&mdash; Dona Carbone</span>
+        </div>
+        <p>
+          Dona isn't asking for herself alone. For years she has given her time to others &mdash;
+          travelling from Long Island into Manhattan multiple times a week to bring food and support to
+          people who are homeless or in need. Now her church family and friends are asking you to help
+          give back to her.
+        </p>
+      </div>
+
+      <div class="side-card">
+        <h3>At a Glance</h3>
+        <ul>
+          <li><strong>Diagnosis:</strong> Stage 3 Ovarian Cancer, February 2025</li>
+          <li><strong>Treatment so far:</strong> Chemotherapy and surgery (July 2025)</li>
+          <li><strong>What's needed:</strong> An alternative treatment not covered by insurance</li>
+          <li><strong>Role:</strong> Director of Worship, Love and Mercy Fellowship</li>
+          <li><strong>Home:</strong> Islip, NY</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-cream">
+  <div class="wrap center">
+    <div class="divider-line"></div>
+    <h2>A Lifetime of Serving Others</h2>
+    <p style="max-width:64ch; margin:0 auto 8px auto; color:var(--ink-soft);">
+      Ordained in 1993, Dona had already been volunteering as a worship leader at Love and Mercy
+      Fellowship since 1987. In the decades since, her service has touched nearly every part of church
+      and community life.
+    </p>
+    <div class="ministry-grid">
+      <div class="ministry-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 8v11a1 1 0 001 1h12a1 1 0 001-1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Director of Worship</h3>
+        <p>Leading Sunday worship and teaching and preaching at Love and Mercy Fellowship and other churches.</p>
+      </div>
+      <div class="ministry-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 10-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>Operation Homeless</h3>
+        <p>Managing the church's outreach to the poor and homeless of Long Island and New York City.</p>
+      </div>
+      <div class="ministry-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 2v4M17 2v4M3 9h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>Board of Deacons</h3>
+        <p>Serving as a member of the Board of Deacons and in office administration for the fellowship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-maroon cta-band">
+  <div class="wrap">
+    <div class="divider-line"></div>
+    <h2>Every Gift Brings Dona Closer to Treatment</h2>
+    <p>
+      100% of donations go directly through Dona's official GoFundMe page, protected by the GoFundMe
+      Giving Guarantee. No gift is too small.
+    </p>
+    <a class="btn-donate-large" href="https://www.gofundme.com/f/hope-and-healing-for-my-cancer-battle" target="_blank" rel="noopener">Donate on GoFundMe &rarr;</a>
+    <div class="cta-sub">You'll be taken to Dona's official, secure GoFundMe fundraiser to give.</div>
+  </div>
+</section>
+
+<section class="band-white">
+  <div class="wrap center">
+    <div class="divider-line"></div>
+    <h2>Other Ways to Help</h2>
+    <div class="help-grid" style="margin-top:32px;">
+      <div class="help-card">
+        <div class="num">1</div>
+        <h3>Give</h3>
+        <p>Make a donation of any size directly through Dona's GoFundMe page.</p>
+      </div>
+      <div class="help-card">
+        <div class="num">2</div>
+        <h3>Share</h3>
+        <p>Forward this page or Dona's GoFundMe link to friends, family, and your church community.</p>
+      </div>
+      <div class="help-card">
+        <div class="num">3</div>
+        <h3>Pray</h3>
+        <p>Keep Dona, her family, and her care team in your prayers as she continues this fight.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Hope &amp; Healing for Rev. Dona Carbone</div>
+        <div>In partnership with <a href="https://www.loveandmercy.church/" target="_blank" rel="noopener">Love and Mercy Fellowship</a>, Bay Shore, NY</div>
+      </div>
+      <div>
+        <div class="footer-brand">Give</div>
+        <div><a href="https://www.gofundme.com/f/hope-and-healing-for-my-cancer-battle" target="_blank" rel="noopener">Donate on GoFundMe</a></div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      This is an independently created page to support Dona Carbone's GoFundMe fundraiser. All donations are processed securely by GoFundMe, not collected on this site.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
